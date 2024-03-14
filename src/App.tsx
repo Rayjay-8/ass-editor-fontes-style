@@ -10,11 +10,11 @@ function createass(text){
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-const assdefault = `Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\pos(100,100)}Legend 1
+const assdefault = `Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\pos(100,200)}Legend 1
 Dialogue: 0,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\pos(100,100)}Legend 2`
 
 function App() {
-  const [count, setCount] = useState(5)
+  const [count, setCount] = useState(3)
 
   const [message, setMessage] = useState('');
   const [color, setColor] = useState('6666cc');
@@ -33,7 +33,7 @@ function App() {
     
     // location.reload()
     await sleep(1000)
-    setMessage(keygrada);
+    setMessage(keygrada+(new Date().toDateString()));
 
   }
 
@@ -53,7 +53,9 @@ function App() {
       })
     });
 
-    console.log(response)
+    // const data = await response.body()
+    // console.log(data)
+    legendaref.current.value = legendaref.current.value
   }
 
   const handleColorChange = (e) => {
@@ -65,23 +67,29 @@ function App() {
       <>
       <h1>Editor de .ass</h1>
 
+      <div className='mb-1'>
+        <video controls key={message} loop autoPlay>
+          <source src="public/output.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      <video controls key={message}>
-        <source src="public/output.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <hr></hr>
+        <label htmlFor="color">Choose color:</label>
+        <input type="text" id="color" value={color} onChange={handleColorChange} />
+        <button onClick={() => setCount(prev => prev - 1)}>sec -</button>
+        sec {count}
+        <button onClick={() => setCount(prev => prev + 1)}>sec +</button>
 
-      <hr></hr>
-      <label htmlFor="color">Choose color:</label>
-      <input type="text" id="color" value={color} onChange={handleColorChange} />
-      <button onClick={() => setCount(prev => prev - 1)}>segundos i</button>
-      segundos {count}
-      <button onClick={() => setCount(prev => prev + 1)}>segundos +</button>
+        <button onClick={onAddLegenda}>update .ass</button>
+        <button onClick={onRender}>Render</button>
+
+      </div>
+
+      
       <br></br>
 
       <textarea rows="5" cols="33" className='wfull' placeholder='texto' type='text' defaultValue={assdefault} ref={legendaref}></textarea>
-      <button onClick={onAddLegenda}>add legenda</button>
-      <button onClick={onRender}>Renderizar</button>
+      
       </>
   
     </>

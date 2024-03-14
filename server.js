@@ -75,7 +75,7 @@ app.post('/save-dialogue', (req, res) => {
       return res.status(500).send('Error writing dialogue to file');
     }
     console.log('Dialogue saved successfully');
-    res.send('Dialogue saved successfully');
+    res.send(dialogue);
   });
 });
 
@@ -92,7 +92,7 @@ app.get('/generate-video', (req, res) => {
   console.log("oie ", req.query)
 
 //   return 123
-  const command = `ffmpeg -y -f lavfi -i color=c=#${color}:s=300x300:d=${sec} public/output_sem.mp4`;
+  const command = `ffmpeg -y -f lavfi -i color=c=#${color}:s=600x600:d=${sec} public/output_sem.mp4`;
 
   console.log("comando ",command)
   exec(command, (error, stdout, stderr) => {
