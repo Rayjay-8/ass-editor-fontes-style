@@ -21,6 +21,6 @@ yarn server
 
 exemplos:
 
-![ex1](public/a.png)
-![ex2](public/b.png)
-![ex3](public/c.png)
+![ex1](public/1.png)
+![ex2](public/2.png)
+![ex3](public/3.png)
