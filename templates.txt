@@ -1,11 +1,29 @@
 
-template1
+template1 - (2s)
 
 Dialogue: 2,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs50\t(0, 200,\fs80)\fnBouncy Black\pos(200,200)\c&HFFFFFF&\3c&H490229&\bord6\shad\be2}Legend simple 1
 Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs50\t(0, 200,\fs80)\fnBouncy Black\pos(200,198)\c&HFFFFFF&\3c&HF469A4&\bord18\shad0\be2}Legend simple 1
 Dialogue: 0,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs50\t(0, 200,\fs80)\fnBouncy Black\pos(200,202)\c&HFFFFFF&\3c&H8D3154&\bord18\shad0\be2}Legend simple 1
 
-template2 KARAOKE
+
+template2 - (2s)
+
+Dialogue: 2,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnBouncy\pos(200,200)\c&HFFFFFF&\3c&H490229&\bord6\shad\be2}Legend Bouncy
+Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnBouncy\pos(200,198)\c&HFFFFFF&\3c&HF469A4&\bord18\shad0\be2}Legend Bouncy
+Dialogue: 0,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnBouncy\pos(200,202)\c&HFFFFFF&\3c&H8D3154&\bord18\shad0\be2}Legend Bouncy
+
+template3 - (2s)
+Dialogue: 2,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnKomika Axis\pos(200,200)\c&HFFFFFF&\3c&H490229&\bord6\shad\be2}Legend Komika
+Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnKomika Axis\pos(200,198)\c&HFFFFFF&\3c&HF469A4&\bord18\shad0\be2}Legend Komika
+Dialogue: 0,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs30\t(0, 200,\fs60)\fnKomika Axis\pos(200,202)\c&HFFFFFF&\3c&H8D3154&\bord18\shad0\be2}Legend Komika
+
+template4 - (2s)
+Dialogue: 2,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs10\t(0, 200,\fs40)\fnDela Gothic One\pos(200,200)\c&HFFFFFF&\3c&H490229&\bord6\shad\be2}Legend Komika
+Dialogue: 1,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs10\t(0, 200,\fs40)\fnDela Gothic One\pos(200,198)\c&HFFFFFF&\3c&HF469A4&\bord18\shad0\be2}Legend Komika
+Dialogue: 0,0:00:00.00,0:01:00.00,Default,,0,0,0,,{\fs10\t(0, 200,\fs40)\fnDela Gothic One\pos(200,202)\c&HFFFFFF&\3c&H8D3154&\bord18\shad0\be2}Legend Komika
+
+
+template5 KARAOKE - (8s)
 
 Dialogue: 0,0:00:01.00,0:00:02.00,Default,,0,0,0,,{\fs20\t(0, 200,\fs30)}K
 Dialogue: 0,0:00:02.00,0:00:03.00,Default,,0,0,0,,{\fs20\t(0, 200,\fs30)}KA
